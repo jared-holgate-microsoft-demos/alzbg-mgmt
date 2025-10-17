@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch:
     inputs:
-      skip_what_if:
+      skipWhatIf:
         description: 'Skip What If Check?'
         default: false
         type: boolean
@@ -55,7 +55,7 @@ jobs:
       id-token: write
       contents: read
     with:
-      skip_what_if: ${{ inputs.skip_what_if }}
+      skipWhatIf: ${{ inputs.skipWhatIf }}
       destroy: ${{ inputs.destroy }}
       managementgroups: ${{ inputs.managementgroups }}
       loggingandsentinelresourcegroup: ${{ inputs.loggingandsentinel }}

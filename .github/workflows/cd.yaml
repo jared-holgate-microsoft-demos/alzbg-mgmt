@@ -10,31 +10,31 @@ on:
         description: 'Skip What If Check?'
         default: false
         type: boolean
-      management_groups:
+      managementgroups:
         description: 'Run Steps: Management Groups'
         type: boolean
         default: true
-      logging_and_sentinel:
+      loggingandsentinel:
         description: 'Run Steps: Logging and Sentinel'
         type: boolean
         default: true
-      policy_definitions:
+      policydefinitions:
         description: 'Run Steps: Policy Definitions'
         type: boolean
         default: true
-      role_definitions:
+      roledefinitions:
         description: 'Run Steps: Role Definitions'
         type: boolean
         default: true
-      policy_assignments:
+      policyassignments:
         description: 'Run Steps: Policy Assignments'
         type: boolean
         default: true
-      management_group_diagnostic_settings:
+      managementgroupdiagnosticsettings:
         description: 'Run Steps: Management Group Diagnostic Settings'
         type: boolean
         default: true
-      subscription_placement:
+      subscriptionplacement:
         description: 'Run Steps: Subscription Placement'
         type: boolean
         default: true
@@ -57,14 +57,14 @@ jobs:
     with:
       skip_what_if: ${{ inputs.skip_what_if }}
       destroy: ${{ inputs.destroy }}
-      management_groups: ${{ inputs.management_groups }}
-      logging_and_sentinel_resource_group: ${{ inputs.logging_and_sentinel }}
-      logging_and_sentinel: ${{ inputs.logging_and_sentinel }}
-      custom_policy_definitions: ${{ inputs.policy_definitions }}
-      custom_role_definitions: ${{ inputs.role_definitions }}
-      management_group_diagnostic_settings: ${{ inputs.management_group_diagnostic_settings }}
-      policy_assignments: ${{ inputs.policy_assignments }}
-      workload_specific_policy_assignments: ${{ inputs.policy_assignments }}
-      subscription_placement: ${{ inputs.subscription_placement }}
-      connectivity_resource_group: ${{ inputs.connectivity }}
-      hub_and_spoke: ${{ inputs.connectivity }}
+      managementgroups: ${{ inputs.managementgroups }}
+      loggingandsentinelresourcegroup: ${{ inputs.loggingandsentinel }}
+      loggingandsentinel: ${{ inputs.loggingandsentinel }}
+      custompolicydefinitions: ${{ inputs.policydefinitions }}
+      customroledefinitions: ${{ inputs.roledefinitions }}
+      managementgroupdiagnosticsettings: ${{ inputs.managementgroupdiagnosticsettings }}
+      policyassignments: ${{ inputs.policyassignments }}
+      workloadspecificpolicyassignments: ${{ inputs.policyassignments }}
+      subscriptionplacement: ${{ inputs.subscriptionplacement }}
+      connectivityresourcegroup: ${{ inputs.connectivity }}
+      hubandspoke: ${{ inputs.connectivity }}

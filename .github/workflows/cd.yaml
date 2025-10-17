@@ -55,7 +55,7 @@ jobs:
       id-token: write
       contents: read
     with:
-      skipWhatIf: ${{ inputs.skipWhatIf }}
+      skipWhatIf: ${{ contains(inputs.skipWhatIf, 'true') }}
       destroy: ${{ inputs.destroy }}
       managementgroups: ${{ inputs.managementgroups }}
       loggingandsentinelresourcegroup: ${{ inputs.loggingandsentinel }}
@@ -68,3 +68,4 @@ jobs:
       subscriptionplacement: ${{ inputs.subscriptionplacement }}
       connectivityresourcegroup: ${{ inputs.connectivity }}
       hubandspoke: ${{ inputs.connectivity }}
+

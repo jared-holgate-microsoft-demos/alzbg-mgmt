@@ -1,0 +1,21 @@
+{
+  "AVAILABILITY_ZONES": [
+    "1",
+    "2",
+    "3"
+  ],
+  "AVAILABILITY_ZONES_SECONDARY": [],
+  "CONNECTIVITY_RESOURCE_GROUP": "rg-alz-connectivity",
+  "CONNECTIVITY_SUBSCRIPTION_ID": "73f401e2-8228-42ca-93e7-9e61cd20cb3b",
+  "IDENTITY_SUBSCRIPTION_ID": "4acc424e-41fb-470d-aedf-819f815d05f8",
+  "LOCATION": "uksouth",
+  "LOGGING_RESOURCE_GROUP": "rg-alz-logging",
+  "MANAGEMENT_SUBSCRIPTION_ID": "4ff39084-ef5d-4499-82f3-3c7f9bd94e8c",
+  "NETWORK_TYPE": "hubNetworking",
+  "MANAGEMENT_GROUP_ID": "alz",
+  "PREFIX": "alz",
+  "RELEASE_VERSION": "latest",
+  "ROOT_PARENT_MANAGEMENT_GROUP_ID": "techconnect-demo",
+  "SECONDARYLOCATION": "ukwest",
+  "SECURITY_SUBSCRIPTION_ID": "4acc424e-41fb-470d-aedf-819f815d05f8"
+}
